@@ -1,0 +1,7 @@
+<input #name_input (keyup)="$event.which === 13 && addName($event, name_input)" />
+
+<h1>
+  <ul>
+    <li *ng-for="#name of names">Hello {{name}}</li>
+  </ul>
+</h1>
